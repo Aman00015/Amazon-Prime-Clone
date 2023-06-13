@@ -1,0 +1,60 @@
+$bg: rgb(20, 19, 47);
+.banner {
+  height: 600px;
+  background-color: $bg;
+
+  > img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+}
+
+.row {
+  background-color: $bg;
+  padding: 1rem;
+  color: white;
+  > div {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem;
+  }
+}
+.card {
+  border-radius: 8px;
+  border: 2px solid $bg;
+  width: 200px;
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: transform 0.5s;
+  box-shadow: 10px 10px 50px 50px $bg;
+  &:hover {
+    transform: translateY(-10px) scale(1.05);
+  }
+}
+.genreBox {
+  display: flex;
+  overflow-x: auto;
+  height: 100px;
+  background-color: $bg;
+  > a {
+    box-shadow: 10px 10px 50px 50px $bg;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    color: black;
+    background-color: white;
+    transition: transform 0.5s;
+    &:hover {
+      background-color: $bg;
+      color: white;
+      transform: translateY(5px) scale(1.05);
+    }
+  }
+}

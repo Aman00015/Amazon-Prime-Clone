@@ -1,0 +1,68 @@
+$bg: rgb(20, 19, 47);
+.header {
+  height: 100px;
+  //   background-color: $bg;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  > a {
+    height: 90%;
+    > img {
+      padding: 10px;
+      height: 90%;
+    }
+  }
+
+  > div {
+    // border: 2px solid red;
+
+    width: 100%;
+    > a {
+      padding: 30px;
+    }
+    > svg {
+      color: white;
+      font-size: 1.5rem;
+    }
+    > svg:hover {
+      color: gray;
+    }
+
+    > input {
+      font-weight: bold;
+      //   background-color: rgb(20, 19, 47);
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 35%,
+        rgba(0, 212, 255, 1) 100%
+      );
+      margin-left: 400px;
+      box-shadow: 1px 2px 5px 10px rgb(90, 208, 255);
+      border-radius: 80px;
+      border: none;
+      padding: 10px;
+      color: white;
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+    > svg {
+      padding-left: 20px;
+      margin-top: 0px;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
